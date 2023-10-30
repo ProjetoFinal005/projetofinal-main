@@ -1,0 +1,31 @@
+<ion-content [fullscreen]="true">
+
+  <div align="center" class="div-img">
+    <img src="../../assets/img/logo.png" alt="" align="center">
+  </div>
+  
+
+  <ion-card class="card">
+    <ion-card-header align="center">
+      <ion-card-title>Login</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <div class="form" align="center">
+        <h2 class="titleInput" align="left">Email</h2>
+        <ion-input label-placement="floating" fill="outline" align="left" placeholder="Enter text" [(ngModel)]="email"></ion-input>
+        <h2 class="titleInput" align="left">Senha</h2>
+        <ion-input label-placement="floating" fill="outline" align="left" type="password" placeholder="Enter text" [(ngModel)]="senha"></ion-input>
+        <div align="center" class="button">
+        <ion-button expand="full" shape="round" color="warning" (click)="login()" >Entrar</ion-button>
+        </div>
+
+        <div align="center" class="divNovo">
+          <h3>Novo por aqui? <a href="/cadastro">Clique aqui</a></h3>
+        </div>
+      </div>
+      
+      
+    </ion-card-content>
+  </ion-card>
+</ion-content>
