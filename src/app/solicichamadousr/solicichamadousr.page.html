@@ -1,4 +1,29 @@
-<ion-content [fullscreen]="true">
+<ion-menu contentId="main-content">
+  <ion-header>
+    <ion-toolbar slot="fixed">
+      <ion-title><svg width="25" height="25" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+        <path d="M12 3a4 4 0 1 0 0 8 4 4 0 1 0 0-8z"></path>
+      </svg><span class="bnv">Bem vindo</span></ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <ion-list>
+      <ion-item>
+        <ion-label><a href="funcionario"><ion-button shape="round" color="warning">Página Inicial</ion-button></a></ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+<ion-content [fullscreen]="true" class="conteudo">
 
   <div align="center" class="div-img">
     <img src="../../assets/img/logo.png" alt="" align="center">
@@ -24,7 +49,7 @@
         <ion-input label-placement="floating" fill="outline" type="text" id="cep" name="cep" required pattern="\d{5}-\d{3}" placeholder="12345-678"></ion-input>
 
         <div align="center">
-          <ion-button expand="full" shape="round" color="warning" (click)="buscarEndereco()">Pesquisar</ion-button>
+          <ion-button expand="full" shape="round" color="warning" (click)="buscarEndereco()" class="btn">Pesquisar</ion-button>
         </div>
         
       
@@ -47,7 +72,7 @@
         <textarea name="" id="" cols="30" rows="10" maxlength="300"class="textDescricao" style="resize: none"></textarea>
 
         <div align="center">
-          <ion-button expand="full" shape="round" color="warning" (click)="cadastrarFuncionario()">Solicitar</ion-button>
+          <ion-button expand="full" shape="round" color="warning" (click)="cadastrarFuncionario()" class="btn">Solicitar</ion-button>
         </div>
         
       </form>

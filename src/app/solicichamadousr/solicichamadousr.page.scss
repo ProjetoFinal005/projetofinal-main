@@ -2,7 +2,7 @@
     font-family: 'Baloo Chettan 2', sans-serif;
   }
   
-  ion-content{
+  .conteudo{
     --background: #EFF6FD url(../../assets/img/background2.png) no-repeat center center / cover;
     --background-size: cover;
   }
@@ -34,12 +34,6 @@
     border: #3636ff solid 1px;
   }
   
-  
-  ion-toolbar {
-      --background: transparent;
-      --ion-color-base: transparent !important;
-    }
-    
     ion-input {
       --border-radius: 10px !important;
     }
@@ -68,7 +62,7 @@
       margin-bottom: 10px;
     }
     
-    .button{
+    .btn{
       margin-top: 60px;
       width: 290px;
       margin-left: 0px;
