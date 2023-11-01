@@ -1,0 +1,79 @@
+<ion-menu contentId="main-content" >
+  <ion-header>
+    <ion-toolbar slot="fixed">
+      <ion-title>Bem vindo</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <ion-list>
+      <ion-item>
+        <ion-label><a href="funcionario"><ion-button shape="round" color="warning">Página Inicial</ion-button></a></ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+
+<ion-content [fullscreen]="true" class="conteudo">
+
+  <div align="center" class="div-img">
+    <img src="../../assets/img/logo.png" alt="" align="center">
+  </div>
+
+  <div align="center" class="h1Tittle">
+    <h1>Chamados Proximos</h1>
+  </div>
+
+<!-- TELA DO TÉCNICO PRA CHAMADOS PROXIMOS  -->
+
+
+<!-- CHAMADO 1 -->
+  <ion-card class="card">
+
+    <ion-card-content>
+<p>•(Nome do Cliente)</p>
+<p>•(Data e hora da visita)</p>
+<p>•(Endereço)</p>
+<p>•(Descrição do problema)</p>
+<div align="center">
+  <ion-button expand="full" shape="round" color="warning" class="btnChamado">Aceitar Chamado</ion-button>
+</div>
+    </ion-card-content>
+  </ion-card>
+
+<!-- CHAMADO 2 -->
+  <ion-card class="card">
+
+    <ion-card-content>
+<p>•(Nome do Cliente)</p>
+<p>•(Data e hora da visita)</p>
+<p>•(Endereço)</p>
+<p>•(Descrição do problema)</p>
+<div align="center">
+  <ion-button expand="full" shape="round" color="warning" class="btnChamado">Aceitar Chamado</ion-button>
+</div>
+    </ion-card-content>
+  </ion-card>
+  
+<!-- CHAMADO 3 -->
+  <ion-card class="card">
+
+    <ion-card-content>
+<p>•(Nome do Cliente)</p>
+<p>•(Data e hora da visita)</p>
+<p>•(Endereço)</p>
+<p>•(Descrição do problema)</p>
+<div align="center">
+  <ion-button expand="full" shape="round" color="warning" class="btnChamado">Aceitar Chamado</ion-button>
+</div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

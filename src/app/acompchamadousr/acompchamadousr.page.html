@@ -1,0 +1,44 @@
+<ion-menu contentId="main-content">
+  <ion-header>
+    <ion-toolbar slot="fixed">
+      <ion-title>Bem vindo</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <ion-list>
+      <ion-item>
+        <ion-label><a href="usuario"><ion-button shape="round" color="warning">Página Principal</ion-button></a></ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content [fullscreen]="true" class="conteudo">
+
+  <div align="center" class="div-img">
+    <img src="../../assets/img/logo.png" alt="" align="center">
+  </div>
+
+  <div align="center" class="h1Tittle">
+    <h1>Status do Chamado</h1>
+  </div>
+
+<!-- TELA DO CLIENTE POR STATUS DO CHAMADO-->
+
+  <ion-card class="card">
+
+    <ion-card-content>
+<p>•(Nome do Técnico)</p>
+<p>•(Status do chamado)</p>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
